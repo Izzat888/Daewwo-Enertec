@@ -1,0 +1,91 @@
+.partner {
+    background: #E2E2E2;
+    margin-top: 100px;
+    height: 880px;
+    margin-bottom: 50px;
+}
+
+.partner__title {
+    margin-top: 80px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #252525;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.partner__span {
+    color: #E91609;
+}
+
+.partner__item {
+    position: absolute;
+}
+
+.partner__img {
+    margin-top: -68px;
+    width: 1360px;
+}
+
+.partner-list__title {
+    margin-top: -47%;
+    left: 55%;
+    position: relative;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #252525;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.partner-list__star {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #565654;
+    left: 55%;
+    position: relative;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.star__span {
+    color: #E91609;
+}
+
+.partner-list__text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 142%;
+    letter-spacing: 6.5%;
+    color: #252525;
+    width: 400px;
+    left: 55%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.partner-list__arrow {
+    position: relative;
+    left: 55%;
+    width: 300px;
+    color: #565654;
+    font-size: 30px;
+}
+
+.partner-list__arrow:hover {
+    color: #E91609;
+}

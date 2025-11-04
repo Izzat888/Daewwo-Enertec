@@ -1,0 +1,95 @@
+.nav__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav__title {
+    width: 620px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #252525;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+.nav__span {
+    color: #E91609;
+    font-family: " Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.nav__text {
+    font-family: " Montserrat";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.nav-span_one {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+}
+
+.nav-text__two {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.nav__button {
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav__button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #E91609;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.nav__button:hover::after {
+    width: 100%;
+}
+
+.nav__button:hover {
+    color: black;
+}

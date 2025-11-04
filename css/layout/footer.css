@@ -1,0 +1,112 @@
+.footer{
+    background: #252525;
+    height: 420px;
+}
+.footer__img{
+    width: 220px;
+    height: 100px;
+}
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.footer__title{
+    font-family: 'Ubuntu';
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+width: 210px;
+}
+.footer__text{
+    font-family: "Ubuntu";
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF80;
+width: 273px;
+}
+.footer-list__title{
+    font-family: "Ubuntu";
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 30px;
+}
+.footer__link{
+    width: 309px;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Ubuntu";
+font-weight: 400;
+font-style: Regular;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+position: relative;
+cursor: pointer;
+transition: color 0.3s ease;
+}
+.footer__link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #E91609;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.footer__link:hover::after {
+    width: 100%;
+}
+
+.footer__link:hover {
+    color: #E91609;
+}
+.fa-brands{
+    font-size: 35px;
+    width: 40px;
+   gap: 50px;
+   color: #FFFFFF;
+   margin-bottom: 30px;
+}
+.fa-brands:hover{
+color: #E91609;
+}
+.footer-list__text{
+    font-family: "Ubuntu";
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+width: 209px;
+margin-bottom: 20px;
+}
+.footer-list-one__text{
+    font-family: "Ubuntu";
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}

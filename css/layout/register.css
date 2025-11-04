@@ -1,0 +1,137 @@
+.register {
+    margin-bottom: 50px;
+}
+
+.register__title {
+    font-family: "Outfit";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+.register__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #25252599;
+    width: 340px;
+
+}
+
+.register__list {
+    display: flex;
+}
+
+.register__input {
+    width: 450px;
+    height: 40px;
+    border: 2px solid #565654;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: #25252580;
+    padding-left: 30px;
+}
+
+.register__button {
+    width: 490px;
+    height: 50px;
+    border-radius: 20px;
+    background: #E91609;
+    border: none;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5 ease;
+}
+
+.register__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transform: skewX(-200deg);
+    transition: 0.7s;
+}
+
+.register__button:hover::before {
+    left: 100%;
+}
+
+.register__button:hover {
+    background-color: #FFFFFF;
+    color: #E91609;
+    border: 2px solid #E91609;
+}
+
+.register-list__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #25252599;
+    margin-bottom: 30px;
+    width: 280px;
+}
+
+.register-list__button {
+    width: 280px;
+    height: 40px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    border-radius: 20px;
+    background: #252525;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5 ease;
+}
+
+.register-list__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transform: skewX(-200deg);
+    transition: 0.7s;
+}
+
+.register-list__button:hover::before {
+    left: 100%;
+}
+
+.register-list__button:hover {
+    background-color: #FFFFFF;
+    color: #252525;
+    border: 2px solid #252525;
+}
