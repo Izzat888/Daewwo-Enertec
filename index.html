@@ -10,25 +10,28 @@
 </head>
 <body>
     <!-- ----------------------------header------------------------------------- -->
-    <header class="header" >
+    <header class="header">
         <header class="container">
             <header class="header__container">
-                <a href="#"><img src="../assests/images/logo.png" alt=""></a>
-                <ul class="header__list">
+                <a href="#"><img src="../assests/images/logo.png" alt="Logo"></a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="header__list" id="headerList">
                     <li class="header__item">
-                        <a class="header__link" href="#">ИНТЕРНЕТ-МАГАЗИН</a>
+                        <a class="header__link" href="#"> ИНТЕРНЕТ-МАГАЗИН</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">ОТЗЫВЫ</a>
+                        <a class="header__link" href="#"> ОТЗЫВЫ</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">О КОМПАНИИ</a>
+                        <a class="header__link" href="#"> О КОМПАНИИ</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">ФРАНШИЗА</a>
+                        <a class="header__link" href="#"> ФРАНШИЗА</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">БЛОГ</a>
+                        <a class="header__link" href="#"> БЛОГ</a>
                     </li>
                 </ul>
                 <ul class="header-box__list">
@@ -36,17 +39,20 @@
                         <a class="header-list__link" href="#" target="_blank">+998946088819</a>
                     </li>
                     <li class="header-list__item">
-                        <button class="header__button">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <button class="header__button">
+                            <i class="fas fa-phone-alt"></i> ЗАКАЗАТЬ ЗВОНОК
+                        </button>
                     </li>
                 </ul>
             </header>
-            <header data-aos-easing="linear" data-aos-duration="1500" data-aos="fade-down"  class="header__box">
-                <h1 class="header__title">Зарабатывайте на продаже теплых полов с маржинальностью до 100% уже в первый месяц </h1>
+            <header data-aos-easing="linear" data-aos-duration="1500" data-aos="fade-down" class="header__box">
+                <h1 class="header__title">Зарабатывайте на продаже теплых полов с маржинальностью до 100% уже в первый месяц</h1>
                 <p class="header__text">- Один партнер в одном городе - Среднемесячный оборот наших партнеров 1.000.000р в месяц - Проверенная бизнес-модель с 2010 года - Работает более 80 партнеров по России и СНГ</p>
                 <a class="header-box__link" href="#">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ + БИЗНЕС-ПЛАН</a>
             </header>
         </header>
     </header>
+
     <!-- -------------------------------nav-------------------------------- -->
      <nav class="nav">
         <nav class="container">
@@ -270,6 +276,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script>  AOS.init();
+   
 </script>
 </body>
 </html>
