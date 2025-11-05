@@ -228,3 +228,121 @@
     color: #E91609;
     border: 2px solid #E91609;
 }
+
+@media (max-width: 1200px) {
+    .section__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .section-one__item,
+    .section-two__item {
+        width: 48%;
+        height: auto;
+    }
+
+    .section-list-two__text,
+    .section-list-four__text {
+        width: 90%;
+    }
+
+    .section-two__text {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .section__button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section-one__item,
+    .section-two__item {
+        width: 90%;
+        height: auto;
+    }
+
+    .section-list__title,
+    .section-list__text,
+    .section-list-two__text,
+    .section-list-three__text,
+    .section-list-four__text {
+        font-size: 16px;
+        line-height: 140%;
+        left: 20px;
+    }
+
+    .section-list__span {
+        font-size: 50px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    .section__span {
+        font-size: 28px;
+    }
+
+    .section__text {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .section__button {
+        width: 280px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-one__item,
+    .section-two__item {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-list__title {
+        font-size: 22px;
+        margin-top: 120px;
+    }
+
+    .section-list__span {
+        font-size: 40px;
+    }
+
+    .section-list__text,
+    .section-list-two__text,
+    .section-list-three__text,
+    .section-list-four__text {
+        font-size: 14px;
+        width: 95%;
+        left: 10px;
+    }
+
+    .section__title {
+        font-size: 22px;
+    }
+
+    .section__span {
+        font-size: 22px;
+    }
+
+    .section__text {
+        font-size: 14px;
+    }
+
+    .section__button {
+        width: 240px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

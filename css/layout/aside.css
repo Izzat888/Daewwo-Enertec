@@ -277,3 +277,103 @@ aside {
     color: #E91609;
     border: 2px solid #E91609;
 }
+
+@media (max-width: 1200px) {
+    .aside__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aside__item {
+        width: 350px;
+        height: auto;
+    }
+
+    .aside-list__title,
+    .aside-list__text,
+    .aside-list__button,
+    .aside-list-one__button,
+    .aside-list-two__button {
+        left: 30px;
+        width: calc(100% - 60px);
+    }
+
+    .aside-list__text {
+        width: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .aside__list {
+        gap: 20px;
+    }
+
+    .aside__item {
+        width: 300px;
+    }
+
+    .aside-list__title,
+    .aside-list__text {
+        font-size: 28px;
+    }
+
+    .aside-list__button,
+    .aside-list-one__button,
+    .aside-list-two__button {
+        font-size: 20px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aside__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside__item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .aside-list__title,
+    .aside-list__text,
+    .aside-list__button,
+    .aside-list-one__button,
+    .aside-list-two__button {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .aside__button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .aside__title,
+    .aside__text,
+    .aside-one__text {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .aside-list__title {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .aside-list__text {
+        font-size: 16px;
+    }
+
+    .aside-list__button,
+    .aside-list-one__button,
+    .aside-list-two__button {
+        font-size: 16px;
+        width: 100%;
+    }
+}

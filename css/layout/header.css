@@ -1,381 +1,372 @@
 .header {
-            background-image: url("../modules/headerfon.jpg");
-            background-position: center;
-            background-size: cover;
-            height: 800px;
-            margin-bottom: -20px;
-            background-repeat: no-repeat;
-            position: relative;
-            overflow: hidden;
+    background-image: url("../modules/headerfon.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    margin-bottom: -20px;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.header * {
+    position: relative;
+    z-index: 1;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__link {
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E91609;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.header__link:hover {
+    color: #E91609;
+}
+
+.header__link:hover::after {
+    width: 100%;
+}
+
+.header-list__link {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.header-list__link:hover {
+    color: #E91609;
+}
+
+.header__button {
+    width: 200px;
+    height: 37px;
+    border-radius: 20px;
+    background: #E91609;
+    font-family: "Montserrat";
+    border: none;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.header__button:hover {
+    background: #FFFFFF;
+    color: #E91609;
+}
+
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 990px;
+    margin-top: 100px;
+}
+
+.header__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+.header-box__link {
+    border: 2px solid #E91609;
+    background-color: #E91609;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border-width: 10px;
+    font-family: "Montserrat";
+}
+
+.header__container a img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.header__container a img:hover {
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(233, 22, 9, 0.8);
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background: rgba(233, 22, 9, 1);
+    transform: rotate(90deg);
+}
+
+.header__item {
+    position: relative;
+}
+
+.header-box__item {
+    display: flex;
+    align-items: center;
+}
+
+.header-list__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.header-list__link::before {
+    content: "\f095";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.header__button {
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #E91609, #FF5252);
+    font-family: "Montserrat";
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 22, 9, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.header__button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.header__button:hover::before {
+    left: 100%;
+}
+
+.header__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(233, 22, 9, 0.6);
+}
+
+.header__button:active {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1200px) {
+    .header__title {
+        width: 100%;
+        font-size: 48px;
+    }
+
+    .header__text {
+        width: 100%;
+    }
+
+    .header__list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__container {
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    .header__list {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .header__title {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .header__text {
+        font-size: 20px;
+    }
+
+    .header-box__list {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .header__list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(76, 35, 35, 0.95);
+        padding: 20px 0;
+        z-index: 999;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .header__list.active {
+        display: flex;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
         }
 
-        .header::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 0;
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
+    }
 
-        .header * {
-            position: relative;
-            z-index: 1;
-        }
+    .header-box__list {
+        margin-left: auto;
+        margin-right: 50px;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-        .header__container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+    .header__title {
+        font-size: 32px;
+        margin-top: 100px;
+    }
 
-        .header__link {
-            position: relative;
-            display: inline-block;
-            color: #FFFFFF;
-            font-family: "League Spartan";
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 20px;
-            text-decoration: none;
-            transition: color 0.4s ease;
-        }
+    .header__text {
+        font-size: 18px;
+    }
 
-        .header__link::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            background-color: #E91609;
-            transition: all 0.4s ease;
-            transform: translateX(-50%);
-        }
+    .header {
+        height: auto;
+        min-height: 800px;
+        padding-bottom: 50px;
+    }
+}
 
-        .header__link:hover {
-            color: #E91609;
-        }
+@media (max-width: 576px) {
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-        .header__link:hover::after {
-            width: 100%;
-        }
+    .header-box__list {
+        margin: 15px 0;
+        width: 100%;
+        align-items: flex-start;
+    }
 
-        .header-list__link {
-            font-family: "Montserrat";
-            font-weight: 700;
-            font-size: 22px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            color: #FFFFFF;
-        }
+    .header__title {
+        font-size: 28px;
+        margin-top: 120px;
+    }
 
-        .header-list__link:hover {
-            color: #E91609;
-        }
+    .header__text {
+        font-size: 16px;
+    }
 
-        .header__button {
-            width: 200px;
-            height: 37px;
-            border-radius: 20px;
-            background: #E91609;
-            font-family: "Montserrat";
-            border: none;
-            color: #FFFFFF;
-            margin-top: 10px;
-        }
+    .header-box__link {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
 
-        .header__button:hover {
-            background: #FFFFFF;
-            color: #E91609;
-        }
+    .header-list__link {
+        font-size: 18px;
+    }
 
-        .header__list {
-            display: flex;
-            gap: 40px;
-        }
+    .header__button {
+        width: 100%;
+    }
 
-        .header__title {
-            font-family: "Montserrat";
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 56px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            width: 990px;
-            margin-top: 100px;
-        }
-
-        .header__text {
-            font-family: "Montserrat";
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 162%;
-            letter-spacing: 0%;
-            color: #FFFFFF;
-            width: 700px;
-            margin-bottom: 50px;
-        }
-
-        .header-box__link {
-            border: 2px solid #E91609;
-            background-color: #E91609;
-            color: #FFFFFF;
-            border-radius: 25px;
-            border-width: 10px;
-            font-family: "Montserrat";
-        }
-
-        /* Yangi chiroyli dizayn uchun CSS qo'shimchalari */
-        /* Logo dizayni */
-        .header__container a img {
-            height: 60px;
-            transition: transform 0.3s ease;
-        }
-
-        .header__container a img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Mobil menyu tugmasi */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 28px;
-            cursor: pointer;
-            z-index: 1000;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(233, 22, 9, 0.8);
-            transition: all 0.3s ease;
-        }
-
-        .menu-toggle:hover {
-            background: rgba(233, 22, 9, 1);
-            transform: rotate(90deg);
-        }
-
-        /* Asosiy navigatsiya */
-        /* .header__list {
-            display: flex;
-            gap: 30px;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        } */
-
-        .header__item {
-            position: relative;
-        }
-        .header-box__item {
-            display: flex;
-            align-items: center;
-        }
-
-        .header-list__link {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
-
-        .header-list__link::before {
-            content: "\f095";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            font-size: 16px;
-        }
-
-        .header__button {
-            width: 200px;
-            height: 45px;
-            border-radius: 25px;
-            background: linear-gradient(135deg, #E91609, #FF5252);
-            font-family: "Montserrat";
-            border: none;
-            color: #FFFFFF;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(233, 22, 9, 0.4);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header__button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .header__button:hover::before {
-            left: 100%;
-        }
-
-        .header__button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(233, 22, 9, 0.6);
-        }
-
-        .header__button:active {
-            transform: translateY(-1px);
-        }
-
-        /* Responsivlik uchun media querylar */
-        @media (max-width: 1200px) {
-            .header__title {
-                width: 100%;
-                font-size: 48px;
-            }
-            
-            .header__text {
-                width: 100%;
-            }
-            
-            .header__list {
-                gap: 20px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .header__container {
-                flex-wrap: wrap;
-                padding-top: 20px;
-            }
-            
-            .header__list {
-                order: 3;
-                width: 100%;
-                justify-content: center;
-                margin-top: 20px;
-                flex-wrap: wrap;
-                gap: 15px;
-                padding: 15px;
-            }
-            
-            .header__title {
-                font-size: 40px;
-                margin-top: 50px;
-            }
-            
-            .header__text {
-                font-size: 20px;
-            }
-            
-            .header-box__list {
-                margin-top: 15px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header__container {
-                position: relative;
-            }
-            
-            .menu-toggle {
-                display: block;
-                position: absolute;
-                right: 15px;
-                top: 15px;
-            }
-            
-            .header__list {
-                display: none;
-                /* flex-direction: column; */
-                position: absolute;
-                top: 80px;
-                left: 0;
-                width: 100%;
-                background: rgba(76, 35, 35, 0.95);
-                padding: 20px 0;
-                z-index: 999;
-                border-radius: 0 0 15px 15px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            }
-            
-            .header__list.active {
-                display: flex;
-                animation: fadeIn 0.3s ease;
-            }
-            
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(-10px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-            
-            .header-box__list {
-                margin-left: auto;
-                margin-right: 50px;
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .header__title {
-                font-size: 32px;
-                margin-top: 100px;
-            }
-            
-            .header__text {
-                font-size: 18px;
-            }
-            
-            .header {
-                height: auto;
-                min-height: 800px;
-                padding-bottom: 50px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .header__container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .header-box__list {
-                margin: 15px 0;
-                width: 100%;
-                align-items: flex-start;
-            }
-            
-            .header__title {
-                font-size: 28px;
-                margin-top: 120px;
-            }
-            
-            .header__text {
-                font-size: 16px;
-            }
-            
-            .header-box__link {
-                display: block;
-                text-align: center;
-                padding: 10px;
-            }
-            
-            .header-list__link {
-                font-size: 18px;
-            }
-            
-            .header__button {
-                width: 100%;
-            }
-            
-            .header__container a img {
-                height: 50px;
-            }
-        }
+    .header__container a img {
+        height: 50px;
+    }
+}
