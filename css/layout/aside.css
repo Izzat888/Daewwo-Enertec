@@ -279,6 +279,9 @@ aside {
 }
 
 @media (max-width: 1200px) {
+    .aside{
+        margin-top: 100px;
+    }
     .aside__list {
         flex-wrap: wrap;
         justify-content: center;
@@ -304,6 +307,9 @@ aside {
 }
 
 @media (max-width: 992px) {
+    .aside{
+        margin-top: 100px;
+    }
     .aside__list {
         gap: 20px;
     }
@@ -326,6 +332,9 @@ aside {
 }
 
 @media (max-width: 768px) {
+    .aside{
+        margin-top: 100px;
+    }
     .aside__list {
         flex-direction: column;
         align-items: center;
@@ -353,6 +362,9 @@ aside {
 }
 
 @media (max-width: 576px) {
+    .aside{
+        margin-top: 150px;
+    }
 
     .aside__title,
     .aside__text,
