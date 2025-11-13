@@ -30,6 +30,8 @@
 .partner__img {
     margin-top: -68px;
     width: 1360px;
+    max-width: 100%;
+    height: auto;
 }
 
 .partner-list__title {
@@ -88,4 +90,70 @@
 
 .partner-list__arrow:hover {
     color: #E91609;
+}
+
+@media (max-width: 1200px) {
+    .partner {
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .partner__img {
+        display: none;
+    }
+    .partner-list__title,
+    .partner-list__star,
+    .partner-list__text,
+    .partner-list__arrow {
+        left: 0;
+        margin: 20px auto;
+        width: 90%;
+        text-align: center;
+    }
+    .partner__item {
+        position: relative;
+        text-align: center;
+    }
+    .partner__video {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner__title {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    .partner-list__title {
+        font-size: 22px;
+        width: 100%;
+    }
+    .partner-list__text {
+        font-size: 16px;
+        width: 100%;
+    }
+    .partner-list__star {
+        font-size: 16px;
+        width: 100%;
+    }
+    .partner-list__arrow {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partner__title {
+        font-size: 22px;
+    }
+    .partner__video {
+        width: 100%;
+        height: 250px;
+    }
+    .partner-list__title {
+        font-size: 18px;
+    }
+    .partner-list__text {
+        font-size: 14px;
+        line-height: 130%;
+    }
 }
